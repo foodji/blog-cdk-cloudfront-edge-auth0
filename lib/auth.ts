@@ -14,7 +14,7 @@ import { verify } from "jsonwebtoken";
 import type { Algorithm } from "jsonwebtoken";
 const SecretId = "blog-cloudformation-edge/auth0";
 
-const sm = new SecretsManagerClient({});
+const sm = new SecretsManagerClient({region: "us-east-1"});
 
 const PUBLIC_PATHS = [/\/favicons\//];
 
